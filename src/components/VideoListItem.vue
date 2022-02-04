@@ -1,10 +1,34 @@
 <template>
-  <li>{{ video.snippet.title }}</li>
+  <li>
+    <img :src="thumbnailUrl" />
+    {{ video.snippet.title }}
+  </li>
 </template>
 
 <script>
 export default {
   name: "VideoListItem",
   props: ["video"],
+  computed: {
+    thumbnailUrl() {
+      return this.video.snippet.thumbnails.default.url;
+    },
+  },
 };
 </script>
+
+<style scoped>
+li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 7px;
+  cursor: pointer;
+}
+li:last-child {
+  border-bottom: none;
+}
+li:hover {
+  background-color: #eee;
+}
+</style>

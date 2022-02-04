@@ -1,6 +1,5 @@
 <template>
   <ul>
-    oi
     <VideoListItem
       v-for="video in myVideoList"
       v-bind:key="video.etag"
@@ -23,4 +22,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+</style>

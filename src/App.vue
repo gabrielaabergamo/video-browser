@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <SearchBar @termChange="onTermChange"></SearchBar>
     <VideoList v-bind:myVideoList="videos"></VideoList>
   </div>
@@ -48,5 +48,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
 }
 </style>
