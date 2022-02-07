@@ -29,6 +29,7 @@ li {
   display: flex;
   gap: 7px;
   cursor: pointer;
+  font-size: 12px;
 }
 li:last-child {
   border-bottom: none;

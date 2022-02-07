@@ -33,5 +33,7 @@ ul {
   list-style-type: none;
   padding: 0;
   border: 1px solid #ddd;
+  margin: 0;
+  width: 40%;
 }
 </style>
